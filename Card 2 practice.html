@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/card.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+<style>
+ *{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ }
+ .cards{
+ width: 7cm; 
+ height: 6.3cm ;
+ border-radius: 6px;
+ margin-top: 10%;
+ margin-left:10% ;
+ box-shadow:  2px 2px 5px gray;
+ cursor: pointer;
+ } 
+ .image img{
+ width:6.24cm ;
+ height: 3.4cm;
+  border-radius: 6px;
+  margin-left: 12px;
+  margin-top: 12px;
+  
+
+ }
+ .head{
+  padding-left: 12px;
+  margin-top: 2px;
+ }
+ .line1{
+ text-decoration: underline gray;
+ margin-left: 15px;
+ width: 168px;
+ margin-top: 10px;
+ }
+ .rs{
+ margin-top: 5px;
+ padding-left: 15px;
+ }
+ .rs{
+ color: rgb(119, 40, 119);
+ font-size: small;
+ font-style: bold;
+ word-spacing: 3px;
+ font-weight: bold;
+ margin-top: 20px;
+ }
+ span1{
+  text-decoration: line-through;
+  color: gray;
+  margin-top: 20px;
+ }
+ span2{
+ background-color: rgba(17, 161, 65, 0.875);
+ font-size: small;
+ font-weight: bold;
+ color: white;
+ border-radius: 2px;
+ padding: 4px;
+ box-sizing: border-box;
+ }
+</style>
+    
+</head>
+<body>
+<div class="cards"> 
+<div class="image">
+ <img src="./Card 2 practice_files/Web_Dev_670f900667.jpg">
+</div>
+<div class="head">
+ <h4>Web Development Master
+ </h4><h4>Course @dot Batch</h4>
+</div>
+<div class="line1">
+ <hr>
+</div>
+<div class="rs">₹4500 <span1>₹6999</span1> <span2>42%off</span2></div>
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
